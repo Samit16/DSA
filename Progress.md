@@ -31,3 +31,42 @@ class Solution {
     }
 }
 ```
+## 3. Valid Anagram
+```
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        return s.length() == t.length() &&
+                Arrays.equals(s.chars().sorted().toArray(),
+                        t.chars().sorted().toArray());
+    }
+}
+```
+-> didn't got in first try had to look for solution
+## 4. Valid Palindrome
+```
+class Solution {
+    public boolean isPalindrome(String s) {
+        String fixed="";
+        for (char c: s.toCharArray()) {
+            if (Character.isDigit(c) || Character.isLetter(c)) {
+                fixed+=c;
+            }
+        }
+        fixed=fixed.toLowerCase();
+
+        int aptr=0;
+        int bptr=fixed.length()-1;
+
+        while(aptr<=bptr) {
+           if (fixed.charAt(aptr)!=fixed.charAt(bptr)) {
+            return false;
+           }
+           aptr++;
+           bptr--;
+        }
+        return true;
+    }
+}
+```
+-> logic development was hard
+

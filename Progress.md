@@ -70,3 +70,6 @@ class Solution {
 ```
 -> logic development was hard
 
+## 5. Power of 3
+
+

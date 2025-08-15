@@ -41,7 +41,7 @@ class Solution {
     }
 }
 ```
--> didn't got in first try had to look for solution
+-> didn't get in first try, had to look for a solution
 ## 4. Valid Palindrome
 ```
 class Solution {
@@ -95,6 +95,23 @@ class Solution {
             n/=4;
         }
         return n==1;
+    }
+}
+```
+## 7. Remove Element
+```
+import java.util.Arrays;
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        Arrays.sort(nums);
+        int k=0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != val) {
+                nums[k]=nums[i];
+                k++;
+            }
+        }
+        return k;
     }
 }
 ```

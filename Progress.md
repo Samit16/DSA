@@ -71,6 +71,32 @@ class Solution {
 -> logic development was hard
 
 ## 5. Power of 3
+```
+class Solution {
+    public boolean isPowerOfThree(int n) {
+        if (n <= 0) {
+            return false;
+        }
+        while (n % 3 == 0) {
+            n /= 3;
+        }
+        return n==1;
+    }
+}
+```
 ## 6. Power of 4
+```
+class Solution {
+    public boolean isPowerOfFour(int n) {
+        if (n<=0) {
+            return false;
+        }
+        while (n % 4 == 0) {
+            n/=4;
+        }
+        return n==1;
+    }
+}
+```
 
 

@@ -115,7 +115,7 @@ class Solution {
     }
 }
 ```
-## Move Zeros
+## 8. Move Zeros
 ```
 class Solution {
     public void moveZeroes(int[] nums) {

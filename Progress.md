@@ -131,4 +131,19 @@ class Solution {
     }
 }
 ```
+## 9. Search insert position 
+```
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int k=0;
+        for (int i=0;i<nums.length;i++){
+            if ( nums[k]>target || nums[k]==target){
+                return k;
+            }
+        }
+        return nums.length;
+    }
+}
+```
+
 

@@ -204,3 +204,4 @@ class Solution {
 -> used boore moyre voting method for this
 
 
+## 13. substring 

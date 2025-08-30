@@ -204,4 +204,11 @@ class Solution {
 -> used boore moyre voting method for this
 
 
-## 13. substring 
+## 13. Strictly Palindromic Number
+```
+class Solution {
+    public boolean isStrictlyPalindromic(int n) {
+        return false;
+    }
+}
+```
